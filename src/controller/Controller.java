@@ -33,7 +33,6 @@ public class Controller implements IController {
 //        if(!stk.isEmpty()){ // Check if the stack is not empty or the current statement is final
 //            state.getTree().insert(currentStatement.toString()); // Insert the current statement in the execution tree
 //        }
-        state.getTree().insert(currentStatement.toString()); // Insert the current statement in the execution tree
         return currentStatement.execute(state); // Execute the current statement
     }
 

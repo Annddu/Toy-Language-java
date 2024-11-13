@@ -9,8 +9,6 @@ import model.value.StringValue;
 // Class for the program state, used to store the program's state( symbol table, execution stack, output, file table) at a certain point in time(runtime)
 public class PrgState {
 
-    private MyIBinaryTree<String> tree;
-
     // The symbol table
     private MyIDictionary<String, IValue> symTable;
     // Getters and setters for the symbol table
@@ -53,7 +51,7 @@ public class PrgState {
         this.initialState = initialState.deepCopy();
         this.exeStack.push(this.initialState);
         this.fileTable = fileTable;
-        this.tree = new MyBinaryTree<>();
+        //this.tree = new MyBinaryTree<>();
     }
 
     // Constructor for the program state
@@ -63,16 +61,12 @@ public class PrgState {
         this.output = new MyList<>();
         this.exeStack.push(initialState);
         this.fileTable = new MyDictionary<>();
-        this.tree = new MyBinaryTree<>();
+        //this.tree = new MyBinaryTree<>();
     }
 
     // Method to get the file table
     public MyIDictionary<StringValue, BufferedReader> getFileTable(){
         return this.fileTable;
-    }
-
-    public MyIBinaryTree<String> getTree() {
-        return tree;
     }
 
     // Method to set the file table to a string
