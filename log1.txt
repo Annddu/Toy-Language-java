@@ -1,0 +1,126 @@
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+v = int;v = 2;print(v) 
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+v = int v = int;v = 2;print(v) 
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+v = int v = int;v = 2;print(v) v = 2;print(v) 
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+v = 2 v = int v = int;v = 2;print(v) v = 2;print(v) 
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+v = 2 v = int print(v) v = int;v = 2;print(v) v = 2;print(v) 
