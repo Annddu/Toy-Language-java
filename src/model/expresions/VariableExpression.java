@@ -2,6 +2,7 @@ package model.expresions;
 
 import exceptions.ADTException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.value.IValue;
 
 public class VariableExpression implements IExpression {
@@ -15,7 +16,7 @@ public class VariableExpression implements IExpression {
 
     @Override
     // Method to evaluate the expression
-    public IValue eval(MyIDictionary<String, IValue> symTbl) throws ADTException {
+    public IValue eval(MyIDictionary<String, IValue> symTbl, MyIHeap heap) throws ADTException {
         return symTbl.getValue(variable);
     }
 

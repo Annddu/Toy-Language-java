@@ -16,6 +16,7 @@ public class TextMenu {
     }
 
     public void addCommand(Command cm){
+
         this.map.put(cm.getKey(), cm);
     }
 

@@ -21,7 +21,7 @@ public class CloseFileStatement implements IStatement{
 
     @Override
     public PrgState execute(PrgState prgState) throws StatementException, ADTException, ExpressionException, IOException {
-        IValue value = this.expression.eval(prgState.getSymTable());
+        IValue value = this.expression.eval(prgState.getSymTable(), prgState.getHeap());
         if(!(value.getType().equals(new StringType()))){
             throw new StatementException("The value is not a string");
         }

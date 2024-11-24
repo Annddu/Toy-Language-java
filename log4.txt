@@ -3,6 +3,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = String
@@ -10,6 +11,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -17,6 +19,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in
@@ -25,6 +28,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -32,6 +36,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf)
@@ -40,6 +45,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -48,6 +54,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    varc = int
@@ -57,6 +64,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -66,6 +74,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -76,6 +85,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -85,6 +95,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -95,6 +106,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -105,6 +117,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -116,6 +129,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);CloseFileStatement(varf)
@@ -126,6 +140,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -137,6 +152,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    CloseFileStatement(varf)
@@ -148,6 +164,7 @@ Out:
    15
 FileTable:
    test.in
+Heap:
 
 ExeStack:
 SymTable:
@@ -157,12 +174,14 @@ Out:
    10
    15
 FileTable:
+Heap:
 
 ExeStack:
    varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = String
@@ -170,6 +189,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -177,6 +197,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in
@@ -185,6 +206,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -192,6 +214,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf)
@@ -200,6 +223,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -208,6 +232,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    varc = int
@@ -217,6 +242,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -226,6 +252,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -236,6 +263,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -245,6 +273,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -255,6 +284,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -265,6 +295,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -276,6 +307,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);CloseFileStatement(varf)
@@ -286,6 +318,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -297,6 +330,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    CloseFileStatement(varf)
@@ -308,6 +342,7 @@ Out:
    15
 FileTable:
    test.in
+Heap:
 
 ExeStack:
 SymTable:
@@ -317,12 +352,14 @@ Out:
    10
    15
 FileTable:
+Heap:
 
 ExeStack:
    varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = String
@@ -330,6 +367,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -337,6 +375,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in
@@ -345,6 +384,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -352,6 +392,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf)
@@ -360,6 +401,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -368,6 +410,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    varc = int
@@ -377,6 +420,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -386,6 +430,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -396,6 +441,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -405,6 +451,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -415,6 +462,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -425,6 +473,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -436,6 +485,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);CloseFileStatement(varf)
@@ -446,6 +496,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -457,6 +508,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    CloseFileStatement(varf)
@@ -468,6 +520,7 @@ Out:
    15
 FileTable:
    test.in
+Heap:
 
 ExeStack:
 SymTable:
@@ -477,12 +530,7 @@ Out:
    10
    15
 FileTable:
-
-ExeStack:
-   varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
-SymTable:
-Out:
-FileTable:
+Heap:
 
 ExeStack:
    varf = String
@@ -490,6 +538,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -497,6 +546,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varf = test.in
@@ -505,6 +555,7 @@ SymTable:
    varf -> 
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -512,6 +563,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    OpenFileStatement(varf)
@@ -520,6 +572,7 @@ SymTable:
    varf -> test.in
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -528,6 +581,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    varc = int
@@ -537,6 +591,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -546,6 +601,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -556,6 +612,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -565,6 +622,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -575,6 +633,7 @@ SymTable:
 Out:
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
@@ -585,6 +644,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    ReadFileStatement(varf, varc)
@@ -596,6 +656,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc);CloseFileStatement(varf)
@@ -606,6 +667,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    print(varc)
@@ -617,6 +679,7 @@ Out:
    10
 FileTable:
    test.in
+Heap:
 
 ExeStack:
    CloseFileStatement(varf)
@@ -628,6 +691,7 @@ Out:
    15
 FileTable:
    test.in
+Heap:
 
 ExeStack:
 SymTable:
@@ -637,4 +701,5 @@ Out:
    10
    15
 FileTable:
+Heap:
 

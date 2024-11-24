@@ -3,6 +3,7 @@ package model.expresions;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.types.IntType;
 import model.value.IValue;
 import model.value.IntValue;
@@ -23,9 +24,9 @@ public class AritmeticalExpression implements IExpression {
 
     @Override
     // Method to evaluate the expression
-    public IValue eval(MyIDictionary<String, IValue> symTbl) throws ADTException, ExpressionException {
-        IValue value1 = left.eval(symTbl);   // recursively evaluate the left and right expressions
-        IValue value2 = right.eval(symTbl);
+    public IValue eval(MyIDictionary<String, IValue> symTbl, MyIHeap heap) throws ADTException, ExpressionException {
+        IValue value1 = left.eval(symTbl, heap);   // recursively evaluate the left and right expressions
+        IValue value2 = right.eval(symTbl, heap);
         if (!value1.getType().equals(new IntType())) { // check if the first operand is an integer
             throw new ExpressionException("First value is not int"); // throw an exception if it is not
         }

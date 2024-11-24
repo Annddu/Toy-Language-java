@@ -2,6 +2,7 @@ package model.expresions;
 
 
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.value.IValue;
 
 public class ValueExpression implements IExpression {
@@ -15,7 +16,7 @@ public class ValueExpression implements IExpression {
 
     @Override
     // Method to evaluate the expression
-    public IValue eval(MyIDictionary<String, IValue> symTbl) {
+    public IValue eval(MyIDictionary<String, IValue> symTbl, MyIHeap heap) {
         return value;
     }
 

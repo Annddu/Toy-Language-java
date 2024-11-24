@@ -3,6 +3,7 @@ package model.expresions;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.types.IntType;
 import model.value.BoolValue;
 import model.value.IValue;
@@ -21,15 +22,15 @@ public class RelationalExpression implements IExpression{
     }
 
     @Override
-    public IValue eval(MyIDictionary<String, IValue> symTbl) throws ADTException, ExpressionException {
-        IValue evaluatedExpressionLeft = left.eval(symTbl);
-        IValue evaluatedExpressionRight = right.eval(symTbl);
-        if (evaluatedExpressionLeft.getType().equals(new IntType())) {
-            throw new ExpressionException("The expressions are of type int");
-        }
-        if(evaluatedExpressionRight.getType().equals(new IntType())) {
-            throw new ExpressionException("The expressions are of type int");
-        }
+    public IValue eval(MyIDictionary<String, IValue> symTbl, MyIHeap heap) throws ADTException, ExpressionException {
+        IValue evaluatedExpressionLeft = left.eval(symTbl, heap);
+        IValue evaluatedExpressionRight = right.eval(symTbl, heap);
+//        if (evaluatedExpressionLeft.getType().equals(new IntType())) {
+//            throw new ExpressionException("The expressions are of type int");
+//        }
+//        if(evaluatedExpressionRight.getType().equals(new IntType())) {
+//            throw new ExpressionException("The expressions are of type int");
+//        }
         switch (operator) {
             case LESS_THAN:
                 return new BoolValue(((IntValue) evaluatedExpressionLeft).getValue() < ((IntValue) evaluatedExpressionRight).getValue());

@@ -3,6 +3,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = int
@@ -10,6 +11,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = 2;print(v)
@@ -17,6 +19,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = 2
@@ -25,6 +28,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    print(v)
@@ -32,6 +36,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
+Heap:
 
 ExeStack:
 SymTable:
@@ -39,12 +44,14 @@ SymTable:
 Out:
    2
 FileTable:
+Heap:
 
 ExeStack:
    v = int;v = 2;print(v)
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = int
@@ -52,6 +59,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = 2;print(v)
@@ -59,6 +67,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = 2
@@ -67,6 +76,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    print(v)
@@ -74,6 +84,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
+Heap:
 
 ExeStack:
 SymTable:
@@ -81,12 +92,14 @@ SymTable:
 Out:
    2
 FileTable:
+Heap:
 
 ExeStack:
    v = int;v = 2;print(v)
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = int
@@ -94,14 +107,16 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
-v = int;v = 2;print(v) 
+Heap:
+
 ExeStack:
    v = 2;print(v)
 SymTable:
    v -> 0
 Out:
 FileTable:
-v = int v = int;v = 2;print(v) 
+Heap:
+
 ExeStack:
    v = 2
    print(v)
@@ -109,18 +124,529 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-v = int v = int;v = 2;print(v) v = 2;print(v) 
+Heap:
+
 ExeStack:
    print(v)
 SymTable:
    v -> 2
 Out:
 FileTable:
-v = 2 v = int v = int;v = 2;print(v) v = 2;print(v) 
+Heap:
+
 ExeStack:
 SymTable:
    v -> 2
 Out:
    2
 FileTable:
-v = 2 v = int print(v) v = int;v = 2;print(v) v = 2;print(v) 
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int;v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+
+ExeStack:
+   v = int
+   v = 2;print(v)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2;print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   v = 2
+   print(v)
+SymTable:
+   v -> 0
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+   print(v)
+SymTable:
+   v -> 2
+Out:
+FileTable:
+Heap:
+
+ExeStack:
+SymTable:
+   v -> 2
+Out:
+   2
+FileTable:
+Heap:
+

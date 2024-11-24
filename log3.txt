@@ -3,6 +3,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    a = bool
@@ -10,6 +11,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = int;a = true;if(a){v = 2}else{v = 3};print(v)
@@ -17,6 +19,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = int
@@ -25,6 +28,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    a = true;if(a){v = 2}else{v = 3};print(v)
@@ -33,6 +37,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    a = true
@@ -42,6 +47,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3};print(v)
@@ -50,6 +56,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3}
@@ -59,6 +66,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    v = 2
@@ -68,6 +76,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    print(v)
@@ -76,6 +85,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
+Heap:
 
 ExeStack:
 SymTable:
@@ -84,12 +94,14 @@ SymTable:
 Out:
    2
 FileTable:
+Heap:
 
 ExeStack:
    a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
 SymTable:
 Out:
 FileTable:
+Heap:
 
 ExeStack:
    a = bool
@@ -97,7 +109,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = int;a = true;if(a){v = 2}else{v = 3};print(v)
@@ -105,8 +117,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = int
@@ -115,9 +126,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    a = true;if(a){v = 2}else{v = 3};print(v)
@@ -126,10 +135,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-v = int
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    a = true
@@ -139,11 +145,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-v = int
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3};print(v)
@@ -152,12 +154,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-a = true
-v = int
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3}
@@ -167,13 +164,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-a = true
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = 2
@@ -183,14 +174,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-if(a){v = 2}else{v = 3}
-a = true
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    print(v)
@@ -199,15 +183,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
-if(a){v = 2}else{v = 3}
-a = true
-v = 2
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
 SymTable:
@@ -216,23 +192,14 @@ SymTable:
 Out:
    2
 FileTable:
-print(v)
-if(a){v = 2}else{v = 3}
-a = true
-v = 2
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
 SymTable:
 Out:
 FileTable:
-Binary Tree:
+Heap:
 
 ExeStack:
    a = bool
@@ -240,8 +207,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = int;a = true;if(a){v = 2}else{v = 3};print(v)
@@ -249,9 +215,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-Binary Tree:
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = int
@@ -260,10 +224,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-Binary Tree:
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    a = true;if(a){v = 2}else{v = 3};print(v)
@@ -272,11 +233,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-v = int
-a = bool
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    a = true
@@ -286,12 +243,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-v = int
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3};print(v)
@@ -300,13 +252,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-a = true
-v = int
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3}
@@ -316,14 +262,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-a = true
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    v = 2
@@ -333,15 +272,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-if(a){v = 2}else{v = 3}
-a = true
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
    print(v)
@@ -350,16 +281,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
-Binary Tree:
-if(a){v = 2}else{v = 3}
-a = true
-v = 2
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
+Heap:
 
 ExeStack:
 SymTable:
@@ -368,24 +290,7 @@ SymTable:
 Out:
    2
 FileTable:
-Binary Tree:
-print(v)
-if(a){v = 2}else{v = 3}
-a = true
-v = 2
-v = int
-if(a){v = 2}else{v = 3};print(v)
-a = bool
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-
-ExeStack:
-   a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-Binary Tree:
+Heap:
 
 ExeStack:
    a = bool
@@ -393,13 +298,7 @@ ExeStack:
 SymTable:
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
+Heap:
 
 ExeStack:
    v = int;a = true;if(a){v = 2}else{v = 3};print(v)
@@ -407,13 +306,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
+Heap:
 
 ExeStack:
    v = int
@@ -422,26 +315,7 @@ SymTable:
    a -> false
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
+Heap:
 
 ExeStack:
    a = true;if(a){v = 2}else{v = 3};print(v)
@@ -450,26 +324,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
+Heap:
 
 ExeStack:
    a = true
@@ -479,53 +334,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3};print(v)
@@ -534,53 +343,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
+Heap:
 
 ExeStack:
    if(a){v = 2}else{v = 3}
@@ -590,107 +353,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
+Heap:
 
 ExeStack:
    v = 2
@@ -700,107 +363,7 @@ SymTable:
    v -> 0
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
+Heap:
 
 ExeStack:
    print(v)
@@ -809,107 +372,7 @@ SymTable:
    v -> 2
 Out:
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
+Heap:
 
 ExeStack:
 SymTable:
@@ -918,577 +381,5 @@ SymTable:
 Out:
    2
 FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-   a -> true
-   v -> 2
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-ExeStack:
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-
-
-ExeStack:
-   a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-   a = bool
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-
-ExeStack:
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-
-ExeStack:
-   v = int
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-
-ExeStack:
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-
-ExeStack:
-   a = true
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-
-ExeStack:
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = true
-
-ExeStack:
-   if(a){v = 2}else{v = 3}
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = true
-if(a){v = 2}else{v = 3};print(v)
-
-ExeStack:
-   v = 2
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = true
-if(a){v = 2}else{v = 3};print(v)
-if(a){v = 2}else{v = 3}
-
-ExeStack:
-   print(v)
-SymTable:
-   a -> true
-   v -> 2
-Out:
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = true
-if(a){v = 2}else{v = 3};print(v)
-if(a){v = 2}else{v = 3}
-v = 2
-
-ExeStack:
-SymTable:
-   a -> true
-   v -> 2
-Out:
-   2
-FileTable:
-Binary Tree:
-a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-a = bool
-v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-v = int
-a = true;if(a){v = 2}else{v = 3};print(v)
-a = true
-if(a){v = 2}else{v = 3};print(v)
-if(a){v = 2}else{v = 3}
-v = 2
-print(v)
-
-ExeStack:
-   a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-   a = bool
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-Binary Tree:
-
-ExeStack:
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-a = bool
-
-ExeStack:
-   v = int
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-Binary Tree:
-a = bool
-
-ExeStack:
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-
-ExeStack:
-   a = true
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-
-ExeStack:
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-a = true
-
-ExeStack:
-   if(a){v = 2}else{v = 3}
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-a = true
-
-ExeStack:
-   v = 2
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-a = true
-if(a){v = 2}else{v = 3}
-
-ExeStack:
-   print(v)
-SymTable:
-   a -> true
-   v -> 2
-Out:
-FileTable:
-Binary Tree:
-a = bool
-v = int
-a = true
-if(a){v = 2}else{v = 3}
-v = 2
-
-ExeStack:
-SymTable:
-   a -> true
-   v -> 2
-Out:
-   2
-FileTable:
-Binary Tree:
-a = bool
-v = int
-a = true
-if(a){v = 2}else{v = 3}
-v = 2
-
-ExeStack:
-   a = bool;v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-
-ExeStack:
-   a = bool
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-Out:
-FileTable:
-
-ExeStack:
-   v = int;a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-
-ExeStack:
-   v = int
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-Out:
-FileTable:
-
-ExeStack:
-   a = true;if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-
-ExeStack:
-   a = true
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> false
-   v -> 0
-Out:
-FileTable:
-
-ExeStack:
-   if(a){v = 2}else{v = 3};print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-
-ExeStack:
-   if(a){v = 2}else{v = 3}
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-
-ExeStack:
-   v = 2
-   print(v)
-SymTable:
-   a -> true
-   v -> 0
-Out:
-FileTable:
-
-ExeStack:
-   print(v)
-SymTable:
-   a -> true
-   v -> 2
-Out:
-FileTable:
-
-ExeStack:
-SymTable:
-   a -> true
-   v -> 2
-Out:
-   2
-FileTable:
+Heap:
 

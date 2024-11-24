@@ -22,7 +22,7 @@ public class OpenFileStatement implements IStatement{
 
     @Override
     public PrgState execute(PrgState state) throws ADTException, ExpressionException, StatementException, FileNotFoundException {
-        IValue value = this.expression.eval(state.getSymTable());
+        IValue value = this.expression.eval(state.getSymTable(), state.getHeap());
         if(!(value.getType().equals(new StringType()))){
             throw new StatementException("The value is not a string");
         }

@@ -71,4 +71,9 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V>{
     public Set<K> getKeys() {
         return this.map.keySet();
     }
+
+    // Method to return the content of the dictionary
+    public Map<K, V> getContent() {
+        return this.map;
+    }
 }

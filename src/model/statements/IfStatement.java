@@ -29,7 +29,7 @@ public class IfStatement implements IStatement {
     //@Override
     // Method to execute the statement
     public PrgState execute(PrgState state) throws StatementException, ADTException, ExpressionException {
-        IValue value = expression.eval(state.getSymTable()); // evaluate the expression
+        IValue value = expression.eval(state.getSymTable(), state.getHeap()); // evaluate the expression
         if(!value.getType().equals(new BoolType())){ // check if the value is a boolean
             throw new StatementException("Expression is not boolean"); // throw an exception if it is not
         }

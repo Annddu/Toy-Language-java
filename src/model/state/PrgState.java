@@ -38,20 +38,24 @@ public class PrgState {
     // The file table, used to store the files that the program has opened
     private MyIDictionary<StringValue, BufferedReader> fileTable;
 
+    //TODO: add heap interface
+    private MyIHeap heap;
+
     // Constructor for the program state
     public PrgState(MyIDictionary<String, IValue> symTable ,
                     MyIStack<IStatement> exeStack,
                     MyIList<String> output ,
                     IStatement initialState,
                     MyIDictionary<StringValue,
-                            BufferedReader> fileTable) {
+                    BufferedReader> fileTable,
+                    MyIHeap heap) {
         this.symTable = symTable;
         this.exeStack = exeStack;
         this.output = output;
         this.initialState = initialState.deepCopy();
         this.exeStack.push(this.initialState);
         this.fileTable = fileTable;
-        //this.tree = new MyBinaryTree<>();
+        this.heap = heap;
     }
 
     // Constructor for the program state
@@ -61,7 +65,11 @@ public class PrgState {
         this.output = new MyList<>();
         this.exeStack.push(initialState);
         this.fileTable = new MyDictionary<>();
-        //this.tree = new MyBinaryTree<>();
+        this.heap = new MyHeap();
+    }
+
+    public MyIHeap getHeap() {
+        return this.heap;
     }
 
     // Method to get the file table
@@ -94,6 +102,6 @@ public class PrgState {
 
     // Method to string
     public String toString(){
-        return exeStack.toString() + symTable.toString() + output.toString()  + fileTableToString();// + tree.toString();
+        return exeStack.toString() + symTable.toString() + output.toString()  + fileTableToString() + heap.toString();
     }
 }

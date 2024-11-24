@@ -4,6 +4,7 @@ import model.value.IValue;
 import model.value.IntValue;
 
 public class IntType implements IType{
+
     @Override
     //Default value
     public IValue defaultValue() {

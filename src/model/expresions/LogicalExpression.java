@@ -4,6 +4,7 @@ package model.expresions;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
+import model.adt.MyIHeap;
 import model.types.BoolType;
 import model.value.BoolValue;
 import model.value.IValue;
@@ -22,9 +23,9 @@ public class LogicalExpression implements IExpression {
 
     @Override
     // Method to evaluate the expression
-    public IValue eval(MyIDictionary<String, IValue> symTbl) throws ADTException, ExpressionException {
-        IValue evaluatedExpressionLeft = left.eval(symTbl); // recursively evaluate the left and right expressions
-        IValue evaluatedExpressionRight = right.eval(symTbl);
+    public IValue eval(MyIDictionary<String, IValue> symTbl, MyIHeap heap) throws ADTException, ExpressionException {
+        IValue evaluatedExpressionLeft = left.eval(symTbl, heap); // recursively evaluate the left and right expressions
+        IValue evaluatedExpressionRight = right.eval(symTbl, heap);
         if (!evaluatedExpressionLeft.getType().equals(new BoolType())) { //check if the left expression is a boolean
             throw new ExpressionException("Left expression is not of type BoolType"); // throw an exception if it is not
         }

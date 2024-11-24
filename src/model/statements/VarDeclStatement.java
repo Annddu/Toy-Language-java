@@ -3,14 +3,8 @@ package model.statements;
 import exceptions.ADTException;
 import exceptions.StatementException;
 import model.state.PrgState;
-import model.types.BoolType;
-import model.types.IType;
-import model.types.IntType;
-import model.types.StringType;
-import model.value.BoolValue;
-import model.value.IValue;
-import model.value.IntValue;
-import model.value.StringValue;
+import model.types.*;
+import model.value.*;
 
 public class VarDeclStatement implements IStatement{
     // The variable name
@@ -31,17 +25,25 @@ public class VarDeclStatement implements IStatement{
     {
         if(state.getSymTable().contains(varName)) // check if the variable already exists
             throw new StatementException("Variable" + this.varName + " already exists."); // throw an exception if it does
-        IValue defaultValue; // create a default value
-        if (type.equals(new IntType())) // check the type of the variable
-            defaultValue = new IntValue(0); // set the default value to 0
-        else if(type.equals(new BoolType()))
-            defaultValue = new BoolValue(false); // set the default value to false
-        else if(type.equals(new StringType()))
-            defaultValue = new StringValue(""); // set the default value to ""
-        else
-            throw new StatementException("Invalid type"); // throw an exception if the type is invalid
-        state.getSymTable().insert(varName, defaultValue); // insert the variable in the symbol table
+
+        state.getSymTable().insert(varName, type.defaultValue()); // insert the variable in the symbol table
         return state; // return the program state
+
+//        IValue defaultValue; // create a default value
+//        if (type.equals(new IntType())) // check the type of the variable
+//            defaultValue = new IntValue(0); // set the default value to 0
+//        else if(type.equals(new BoolType()))
+//            defaultValue = new BoolValue(false); // set the default value to false
+//        else if(type.equals(new StringType()))
+//            defaultValue = new StringValue(""); // set the default value to ""
+//        else if(type.equals(new RefType(new IntType()))){
+//            RefType refType = (RefType) type;
+//            defaultValue = new RefValue(0, refType.getInner());
+//        }
+//        else
+//            throw new StatementException("Invalid type"); // throw an exception if the type is invalid
+//        state.getSymTable().insert(varName, defaultValue); // insert the variable in the symbol table
+//        return state; // return the program state
     }
 
     @Override

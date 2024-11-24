@@ -28,7 +28,7 @@ public class AssignStatement implements IStatement{
             throw new StatementException("Variable was not found");
         }
         IValue value = prgState.getSymTable().getValue(this.variableName); // get the value of the variable
-        IValue evalValue = this.expression.eval(prgState.getSymTable()); // evaluate the expression
+        IValue evalValue = this.expression.eval(prgState.getSymTable(), prgState.getHeap()); // evaluate the expression
         if (!value.getType().equals(evalValue.getType())){ // check if the value type matches the expression type
             throw new StatementException("Value type mismatch");
         }

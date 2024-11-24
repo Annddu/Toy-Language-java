@@ -35,7 +35,7 @@ public class ReadFileStatement implements IStatement{
             throw new StatementException("The type is incorrect");
         }
 
-        var res = exp.eval(table);
+        var res = exp.eval(table, prgState.getHeap());
 
         if(!res.getType().equals(new StringType())){
             throw new StatementException("The result is not a String Type!");
