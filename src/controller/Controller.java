@@ -1,6 +1,7 @@
 package controller;
 
 import exceptions.*;
+import exceptions.EmptyStackException;
 import model.adt.MyIHeap;
 import model.adt.MyIList;
 import model.adt.MyIStack;
@@ -12,10 +13,8 @@ import model.value.RefValue;
 import repository.IRepository;
 
 import java.io.IOException;
-import java.util.Collection;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.List;
 
 // Class for the controller, used to control the execution of the program
 public class Controller implements IController {
@@ -68,9 +67,41 @@ public class Controller implements IController {
     }
 
     private Map<Integer, IValue> unsafeGarbageCollector(List<Integer> symTableAddr, MyIHeap heap){
+        // it keeps only the addresses that are in symTableAddr si returneaza un map nou
         return heap.getMap().entrySet().stream().
                 filter(e->symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    }
+
+    private Map<Integer, IValue> safeGarbageCollector(List<Integer> symTableAddr, MyIHeap heap){
+        //tine cont de nested ref, merge in adancime in heap si verifica daca adresa e in symTableAddr si o pastreaza
+        List<Integer> adresses = new ArrayList<>(symTableAddr); // list of adresses
+        boolean found = true; // flag to determine if an adress was found
+        while(found){ // while an adress was found
+            found = false; // set the flag to false
+            List<IValue> referenced = new ArrayList<>(); // list of referenced values
+            for(Integer adress : adresses){ // for each adress
+                IValue value = heap.getValue(adress); // get the value
+                if(value != null){ // if the value is not null
+                    referenced.add(value); // add the value to the list of referenced values
+                }
+            }
+            List<Integer> newAdresses = getAddrFromSymTable(referenced); // get the new adresses
+            for(Integer adress : newAdresses){ // for each new adress
+                if(!adresses.contains(adress)){ // if the adress is not in the list of adresses
+                    adresses.add(adress); // add the adress to the list of adresses
+                    found = true;
+                }
+            }
+        }
+
+        Map<Integer, IValue> result = new HashMap<>(); // map of adresses and values
+        for(Map.Entry<Integer, IValue> entry : heap.getMap().entrySet()){ // for each entry in the heap
+            if(adresses.contains(entry.getKey())){ // if the adress is in the list of adresses
+                result.put(entry.getKey(), entry.getValue()); // add the entry to the result
+            }
+        }
+        return result;
     }
 
     private List<Integer> getAddrFromSymTable(Collection<IValue> symTableValues){

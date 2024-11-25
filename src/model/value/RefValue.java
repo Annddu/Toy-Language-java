@@ -31,6 +31,6 @@ public class RefValue implements IValue{
 
     @Override
     public String toString(){
-        return String.format("(%d, %s)", address, locationType);
+        return "(" + address + ", " + locationType.toString() + ")";
     }
 }

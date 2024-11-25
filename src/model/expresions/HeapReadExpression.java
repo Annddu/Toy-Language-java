@@ -19,9 +19,13 @@ public class HeapReadExpression implements IExpression{
     public IValue eval(MyIDictionary<String, IValue> symbolTable, MyIHeap heap) throws ExpressionException, ADTException {
         IValue value = this.expression.eval(symbolTable, heap);
         if(!(value instanceof RefValue)){
-            throw new ExpressionException("The expression must be an integer");
+            throw new ExpressionException("The expression must be an reference value");
         }
+
         RefValue refValue = (RefValue) value;
+        if(!heap.getMap().containsKey(refValue.getAddress())){
+            throw new ExpressionException("The address does not exist in the heap");
+        }
         return heap.getValue(refValue.getAddress());
     }
 

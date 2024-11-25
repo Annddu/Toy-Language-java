@@ -38,6 +38,7 @@ public class HeapAllocationStatement implements IStatement{
             throw new StatementException("Types do not match");
         }
         int adress = state.getHeap().add(value);
+        System.out.println(adress);
         state.getSymTable().insert(variable, new RefValue(adress, value.getType()));
         return state;
     }
