@@ -33,7 +33,7 @@ public class HeapWriteStatement implements IStatement{
             throw new RuntimeException("The variable and the expression are not of the same type");
         }
         state.getHeap().update(referenceValue.getAddress(), evaluated);
-        return state;
+        return null;
     }
 
     @Override

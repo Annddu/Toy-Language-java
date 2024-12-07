@@ -37,7 +37,7 @@ public class OpenFileStatement implements IStatement{
             throw new FileNotFoundException("The file does not exist");
         }
 
-        return state;
+        return null;
     }
 
     @Override

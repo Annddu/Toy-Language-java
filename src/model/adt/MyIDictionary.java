@@ -12,4 +12,5 @@ public interface MyIDictionary <K, V>{
     boolean contains(K key);
     Set<K> getKeys();
     Map<K, V> getContent();
+    MyDictionary<K, V> deepCopy();
 }

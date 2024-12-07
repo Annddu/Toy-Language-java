@@ -21,7 +21,7 @@ public class CompStatement implements IStatement{
         prgState.getExeStack().push(statement2); // push the second statement on the execution stack
         prgState.getExeStack().push(statement1); // push the first statement on the execution stack
 
-        return prgState; // return the program state
+        return null; // return the program state
     }
 
     @Override

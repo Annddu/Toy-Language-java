@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 // Class for the repository, used to store the program states, evry line of code that is executed is stored in the repository
 public class Repository implements IRepository {
@@ -38,15 +37,6 @@ public class Repository implements IRepository {
     }
 
     @Override
-    // Method to get the current program state
-    public PrgState getCurrentPrg() throws RepoException {
-        if (this.prgStateList.isEmpty()) { // check if the list is empty
-            throw new RepoException("No loaded program"); // throw an exception if it is
-        }
-        return this.prgStateList.get(this.currentIndex); // return the current program state
-    }
-
-    @Override
     // Method to set the current program state
     public void addPrgState(PrgState state) {
         this.prgStateList.add(state);
@@ -60,14 +50,20 @@ public class Repository implements IRepository {
 
     @Override
     //Method to print the program state to the log file
-    public void logPrgStateExec() throws RepoException {
+    public void logPrgStateExec(PrgState state) throws RepoException {
         try {
-            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(this.filename, true)));
-            logFile.println(this.getCurrentPrg().toString());
-            logFile.flush();
-            logFile.close();
-        } catch(IOException err) {
-            throw new RepoException("File not exists");
+            PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(this.filename, true)));
+            writer.println(state.toString());
+            writer.close();
+
+        } catch (IOException e) {
+            throw new RepoException("File does not exist");
         }
+    }
+
+    @Override
+    public void setPrgList(List<PrgState> prgList) {
+        this.prgStateList.clear();
+        this.prgStateList = prgList;
     }
 }

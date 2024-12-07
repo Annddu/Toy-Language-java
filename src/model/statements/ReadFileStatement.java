@@ -57,7 +57,7 @@ public class ReadFileStatement implements IStatement{
 
         table.insert(varName, new IntValue(parser));
 
-        return prgState;
+        return null;
 
     }
 

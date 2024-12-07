@@ -130,6 +130,20 @@ public class Main {
         IRepository repository9 = new Repository(prg9,"log9.txt");
         Controller controller9 = new Controller(repository9, true);
 
+        //int v; Ref int a; v=10; new(a,22); fork(wH(a,30); v=32; print(v); print(rH(a))); print(v); print(rH(a))
+        IStatement statement10 = new CompStatement(new VarDeclStatement("v", new IntType()),
+                new CompStatement(new VarDeclStatement("a", new RefType(new IntType())),
+                        new CompStatement(new AssignStatement("v", new ValueExpression(new IntValue(10))),
+                                new CompStatement(new HeapAllocationStatement( "a", new ValueExpression(new IntValue(22))),
+                                        new CompStatement(new ForkStatement(new CompStatement(new HeapWriteStatement("a", new ValueExpression(new IntValue(30))),
+                                                new CompStatement(new AssignStatement("v", new ValueExpression(new IntValue(32))),
+                                                        new CompStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new HeapReadExpression(new VariableExpression("a"))))))),
+                                                new CompStatement(new PrintStatement(new VariableExpression("v")), new PrintStatement(new HeapReadExpression(new VariableExpression("a")))))))));
+
+        PrgState prg10 = new PrgState(statement10);
+        IRepository repository10 = new Repository(prg10,"log10.txt");
+        Controller controller10 = new Controller(repository10, true);
+
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExampleCommand("1", ex1.toString(), controller1));
@@ -141,6 +155,7 @@ public class Main {
         menu.addCommand(new RunExampleCommand("7", ex7.toString(), controller7));
         menu.addCommand(new RunExampleCommand("8", ex8.toString(), controller8));
         menu.addCommand(new RunExampleCommand("9", ex9.toString(), controller9));
+        menu.addCommand(new RunExampleCommand("10", statement10.toString(), controller10));
 
         menu.show();
     }

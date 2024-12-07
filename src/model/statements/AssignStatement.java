@@ -33,7 +33,7 @@ public class AssignStatement implements IStatement{
             throw new StatementException("Value type mismatch");
         }
         prgState.getSymTable().insert(this.variableName, evalValue); // insert the new value in the symbol table
-        return prgState; // return the program state
+        return null; // return the program state
     }
 
     @Override

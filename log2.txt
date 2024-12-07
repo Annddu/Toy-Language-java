@@ -1,3 +1,4 @@
+ID = 2
 ExeStack:
    a = int;b = int;a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -5,6 +6,7 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
 ExeStack:
    a = int
    b = int;a = 2+3*5;b = a+1;print(b)
@@ -13,6 +15,16 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   a = int
+   b = int;a = 2+3*5;b = a+1;print(b)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = int;a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -21,6 +33,16 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = int;a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = int
    a = 2+3*5;b = a+1;print(b)
@@ -30,6 +52,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = int
+   a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -39,6 +72,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    a = 2+3*5
    b = a+1;print(b)
@@ -49,6 +93,18 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   a = 2+3*5
+   b = a+1;print(b)
+SymTable:
+   a -> 0
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = a+1;print(b)
 SymTable:
@@ -58,6 +114,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = a+1;print(b)
+SymTable:
+   a -> 17
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = a+1
    print(b)
@@ -68,6 +135,18 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = a+1
+   print(b)
+SymTable:
+   a -> 17
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    print(b)
 SymTable:
@@ -77,6 +156,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   print(b)
+SymTable:
+   a -> 17
+   b -> 18
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
 SymTable:
    a -> 17
@@ -86,6 +176,7 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
 ExeStack:
    a = int;b = int;a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -93,6 +184,7 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
 ExeStack:
    a = int
    b = int;a = 2+3*5;b = a+1;print(b)
@@ -101,6 +193,16 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   a = int
+   b = int;a = 2+3*5;b = a+1;print(b)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = int;a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -109,6 +211,16 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = int;a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = int
    a = 2+3*5;b = a+1;print(b)
@@ -118,6 +230,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = int
+   a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    a = 2+3*5;b = a+1;print(b)
 SymTable:
@@ -127,6 +250,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   a = 2+3*5;b = a+1;print(b)
+SymTable:
+   a -> 0
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    a = 2+3*5
    b = a+1;print(b)
@@ -137,84 +271,7 @@ Out:
 FileTable:
 Heap:
 
-ExeStack:
-   b = a+1;print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1
-   print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   print(b)
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-   18
-FileTable:
-Heap:
-
-ExeStack:
-   a = int;b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = int
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
+ID = 2
 ExeStack:
    a = 2+3*5
    b = a+1;print(b)
@@ -225,6 +282,7 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
 ExeStack:
    b = a+1;print(b)
 SymTable:
@@ -234,6 +292,17 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
+ExeStack:
+   b = a+1;print(b)
+SymTable:
+   a -> 17
+   b -> 0
+Out:
+FileTable:
+Heap:
+
+ID = 2
 ExeStack:
    b = a+1
    print(b)
@@ -244,84 +313,7 @@ Out:
 FileTable:
 Heap:
 
-ExeStack:
-   print(b)
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-   18
-FileTable:
-Heap:
-
-ExeStack:
-   a = int;b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = int
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5
-   b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1;print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
+ID = 2
 ExeStack:
    b = a+1
    print(b)
@@ -332,6 +324,7 @@ Out:
 FileTable:
 Heap:
 
+ID = 2
 ExeStack:
    print(b)
 SymTable:
@@ -341,85 +334,7 @@ Out:
 FileTable:
 Heap:
 
-ExeStack:
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-   18
-FileTable:
-Heap:
-
-ExeStack:
-   a = int;b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = int
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5
-   b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1;print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1
-   print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
+ID = 2
 ExeStack:
    print(b)
 SymTable:
@@ -429,87 +344,7 @@ Out:
 FileTable:
 Heap:
 
-ExeStack:
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-   18
-FileTable:
-Heap:
-
-ExeStack:
-   a = int
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int;a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = int
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5;b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   a = 2+3*5
-   b = a+1;print(b)
-SymTable:
-   a -> 0
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1;print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   b = a+1
-   print(b)
-SymTable:
-   a -> 17
-   b -> 0
-Out:
-FileTable:
-Heap:
-
-ExeStack:
-   print(b)
-SymTable:
-   a -> 17
-   b -> 18
-Out:
-FileTable:
-Heap:
-
+ID = 2
 ExeStack:
 SymTable:
    a -> 17

@@ -40,7 +40,7 @@ public class IfStatement implements IStatement {
             state.getExeStack().push(statementElse); // push the else statement on the execution stack
         }
 
-        return state; // return the program state
+        return null; // return the program state
     }
 
     @Override

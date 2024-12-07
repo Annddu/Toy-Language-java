@@ -60,9 +60,6 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V>{
             str.append("   ");
             str.append(key).append(" -> ").append(this.map.get(key)).append("\n");
         }
-//        if(str.length() > 0){
-//            str.deleteCharAt(str.length()-1);
-//        }
         return "SymTable:\n" + str;
     }
 
@@ -75,5 +72,13 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V>{
     // Method to return the content of the dictionary
     public Map<K, V> getContent() {
         return this.map;
+    }
+
+    public MyDictionary<K, V> deepCopy() {
+        MyDictionary<K, V> copy = new MyDictionary<>();
+        for (K key : this.map.keySet()) {
+            copy.insert(key, this.map.get(key));
+        }
+        return copy;
     }
 }

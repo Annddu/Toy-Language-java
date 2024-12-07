@@ -1,6 +1,11 @@
 package model.state;
 import java.io.BufferedReader;
+import java.io.IOException;
 
+import exceptions.ADTException;
+import exceptions.EmptyStackException;
+import exceptions.ExpressionException;
+import exceptions.StatementException;
 import model.adt.*;
 import model.statements.IStatement;
 import model.value.IValue;
@@ -38,16 +43,16 @@ public class PrgState {
     // The file table, used to store the files that the program has opened
     private MyIDictionary<StringValue, BufferedReader> fileTable;
 
-    //TODO: add heap interface
     private MyIHeap heap;
+    private final int id;
+    private static int index;
 
     // Constructor for the program state
     public PrgState(MyIDictionary<String, IValue> symTable ,
                     MyIStack<IStatement> exeStack,
                     MyIList<String> output ,
                     IStatement initialState,
-                    MyIDictionary<StringValue,
-                    BufferedReader> fileTable,
+                    MyIDictionary<StringValue, BufferedReader> fileTable,
                     MyIHeap heap) {
         this.symTable = symTable;
         this.exeStack = exeStack;
@@ -56,6 +61,7 @@ public class PrgState {
         this.exeStack.push(this.initialState);
         this.fileTable = fileTable;
         this.heap = heap;
+        this.id = getNewId();
     }
 
     // Constructor for the program state
@@ -66,6 +72,7 @@ public class PrgState {
         this.exeStack.push(initialState);
         this.fileTable = new MyDictionary<>();
         this.heap = new MyHeap();
+        this.id = getNewId();
     }
 
     public MyIHeap getHeap() {
@@ -102,6 +109,23 @@ public class PrgState {
 
     // Method to string
     public String toString(){
-        return exeStack.toString() + symTable.toString() + output.toString()  + fileTableToString() + heap.toString();
+        return "ID = " + this.id + "\n" + exeStack.toString() + symTable.toString() + output.toString()  + fileTableToString() + heap.toString();
+    }
+
+    public boolean isNotCompleted(){
+        return !exeStack.isEmpty();
+    }
+
+    public PrgState oneStep() throws ADTException, StatementException, IOException, ExpressionException {
+        if(exeStack.isEmpty()){
+            throw new EmptyStackException("Execution stack is empty");
+        }
+        IStatement currentStatement = exeStack.pop();
+        return currentStatement.execute(this);
+    }
+
+    private synchronized int getNewId(){
+        index++;
+        return index;
     }
 }

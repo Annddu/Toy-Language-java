@@ -32,7 +32,7 @@ public class CloseFileStatement implements IStatement{
         prgState.getFileTable().getValue((StringValue)value).close();
         prgState.getFileTable().remove((StringValue)value);
 
-        return prgState;
+        return null;
     }
 
     @Override

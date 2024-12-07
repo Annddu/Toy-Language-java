@@ -27,7 +27,7 @@ public class VarDeclStatement implements IStatement{
             throw new StatementException("Variable" + this.varName + " already exists."); // throw an exception if it does
 
         state.getSymTable().insert(varName, type.defaultValue()); // insert the variable in the symbol table
-        return state; // return the program state
+        return null; // return the program state
 
 //        IValue defaultValue; // create a default value
 //        if (type.equals(new IntType())) // check the type of the variable
