@@ -1,8 +1,10 @@
 package model.expresions;
 
 import exceptions.ADTException;
+import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
+import model.types.IType;
 import model.value.IValue;
 
 public class VariableExpression implements IExpression {
@@ -24,6 +26,15 @@ public class VariableExpression implements IExpression {
     // Method to deep copy the expression
     public IExpression deepCopy() {
         return new VariableExpression(variable);
+    }
+
+    @Override
+    public IType typeCheck(MyIDictionary<String, IType> typeEnv) throws ExpressionException {
+        try {
+            return typeEnv.getValue(variable);
+        } catch (ADTException e) {
+            throw new ExpressionException("The variable " + variable + " is not defined");
+        }
     }
 
     // Method to String

@@ -6,6 +6,7 @@ import exceptions.ExpressionException;
 import model.adt.MyIDictionary;
 import model.adt.MyIHeap;
 import model.types.BoolType;
+import model.types.IType;
 import model.value.BoolValue;
 import model.value.IValue;
 
@@ -49,6 +50,18 @@ public class LogicalExpression implements IExpression {
     public IExpression deepCopy() {
         // recursively deep copy the left and right expressions
         return new LogicalExpression(left.deepCopy(), operator, right.deepCopy());
+    }
+
+    @Override
+    public IType typeCheck(MyIDictionary<String, IType> typeEnv) throws ExpressionException {
+        IType type1, type2;
+        type1 = left.typeCheck(typeEnv);
+        type2 = right.typeCheck(typeEnv);
+        if(!type1.equals(new BoolType()))
+            throw new ExpressionException("First operand is not a boolean");
+        if(!type2.equals(new BoolType()))
+            throw new ExpressionException("Second operand is not a boolean");
+        return new BoolType();
     }
 
     @Override

@@ -2,7 +2,9 @@ package model.statements;
 
 import exceptions.ADTException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.state.PrgState;
+import model.types.IType;
 
 public class CompStatement implements IStatement{
     // The two statements to be executed
@@ -28,6 +30,11 @@ public class CompStatement implements IStatement{
     // Method to deep copy the statement
     public IStatement deepCopy() {
         return new CompStatement(this.statement1, this.statement2);
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        return statement2.typeCheck(statement1.typeCheck(typeEnv));
     }
 
     @Override

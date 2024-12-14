@@ -3,9 +3,11 @@ package model.statements;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expresions.IExpression;
 import model.expresions.ValueExpression;
 import model.state.PrgState;
+import model.types.IType;
 import model.value.IValue;
 
 public class AssignStatement implements IStatement{
@@ -43,8 +45,33 @@ public class AssignStatement implements IStatement{
     }
 
     @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        IType typeVar;
+        IType typeExp;
+        try{
+            typeVar = typeEnv.getValue(this.variableName);
+        }
+        catch (ADTException e){
+            throw new StatementException("The variable " + this.variableName + " is not defined");
+        }
+
+        try{
+            typeExp = expression.typeCheck(typeEnv);
+        }
+        catch (ExpressionException e){
+            throw new StatementException("The expression " + this.expression.toString() + " is not defined");
+        }
+        if(!typeVar.equals(typeExp)){
+            throw new StatementException("The variable " + this.variableName + " and the expression " + this.expression.toString() + " do not have the same type");
+        }
+        return typeEnv;
+    }
+
+    @Override
     // Method to String
     public String toString(){
         return this.variableName + " = " + this.expression.toString();
     }
+
+
 }

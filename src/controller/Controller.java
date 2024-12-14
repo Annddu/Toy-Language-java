@@ -2,12 +2,11 @@ package controller;
 
 import exceptions.*;
 import exceptions.EmptyStackException;
-import model.adt.MyIHeap;
-import model.adt.MyIList;
-import model.adt.MyIStack;
+import model.adt.*;
 import model.expresions.IExpression;
 import model.state.PrgState;
 import model.statements.IStatement;
+import model.types.IType;
 import model.value.IValue;
 import model.value.RefValue;
 import repository.IRepository;
@@ -89,6 +88,14 @@ public class Controller implements IController {
     @Override
     // Method to execute all the steps of the program
     public void allStep() throws StatementException, ADTException, IOException, ExpressionException, RepoException {
+        for(PrgState state: repository.getStates()){
+            MyIDictionary<String, IType> typeTable = new MyDictionary<>();
+
+            if(!state.getExeStack().isEmpty()){
+                state.getExeStack().peek().typeCheck(typeTable);
+            }
+        }
+
         executor = Executors.newFixedThreadPool(2);
         List<PrgState> programsList = removeCompletedPrg(repository.getStates());
         if (programsList.isEmpty()){

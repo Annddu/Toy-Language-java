@@ -4,10 +4,12 @@ package model.statements;
 import exceptions.ADTException;
 import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expresions.IExpression;
 import model.expresions.VariableExpression;
 import model.state.PrgState;
 import model.types.BoolType;
+import model.types.IType;
 import model.value.BoolValue;
 import model.value.IValue;
 
@@ -48,6 +50,23 @@ public class IfStatement implements IStatement {
     public IStatement deepCopy() {
         // recursively deep copy the then and else statements
         return new IfStatement(this.statementThan.deepCopy(),  this.statementElse.deepCopy(),  this.expression.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        IType typeExp;
+        try{
+            typeExp = expression.typeCheck(typeEnv);
+        }
+        catch (ExpressionException e){
+            throw new StatementException(e.getMessage());
+        }
+        if(!typeExp.equals(new BoolType())){
+            throw new StatementException("The expression must be a boolean");
+        }
+        statementThan.typeCheck(typeEnv.deepCopy());
+        statementElse.typeCheck(typeEnv.deepCopy());
+        return typeEnv;
     }
 
     @Override

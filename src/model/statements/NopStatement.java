@@ -1,7 +1,10 @@
 package model.statements;
 
+import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expresions.IExpression;
 import model.state.PrgState;
+import model.types.IType;
 
 public class NopStatement implements IStatement {
 
@@ -21,5 +24,10 @@ public class NopStatement implements IStatement {
     // Method to deep copy the statement
     public IStatement deepCopy(){
         return new NopStatement();
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        return typeEnv;
     }
 }

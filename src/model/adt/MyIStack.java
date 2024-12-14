@@ -6,4 +6,5 @@ public interface MyIStack <T>{
     public T pop() throws EmptyStackException;
     public int size();
     public boolean isEmpty();
+    public T peek() throws EmptyStackException;
 }

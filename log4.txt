@@ -744,3 +744,1122 @@ Out:
 FileTable:
 Heap:
 
+ID = 4
+ExeStack:
+   varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String;varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = String
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in;OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varf = test.in
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> 
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf);varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   OpenFileStatement(varf)
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int;ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   varc = int
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 0
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc);print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   ReadFileStatement(varf, varc)
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 10
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc);CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   print(varc)
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+   CloseFileStatement(varf)
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+   test.in
+Heap:
+
+ID = 4
+ExeStack:
+SymTable:
+   varf -> test.in
+   varc -> 15
+Out:
+   10
+   15
+FileTable:
+Heap:
+

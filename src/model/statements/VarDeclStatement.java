@@ -2,6 +2,7 @@ package model.statements;
 
 import exceptions.ADTException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.state.PrgState;
 import model.types.*;
 import model.value.*;
@@ -50,6 +51,12 @@ public class VarDeclStatement implements IStatement{
     // Method to deep copy the statement
     public IStatement deepCopy() {
         return new VarDeclStatement(new String(this.varName), this.type);
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        typeEnv.insert(varName, type);
+        return typeEnv;
     }
 
     // Method to String

@@ -47,6 +47,13 @@ public class MyStack<T> implements MyIStack<T>{
     }
 
     @Override
+    public T peek() throws EmptyStackException {
+        if(this.stack.isEmpty())
+            throw new EmptyStackException("Stack is empty");
+        return this.stack.peek();
+    }
+
+    @Override
     // Method to String
     public String toString(){
         StringBuilder str = new StringBuilder();

@@ -1,8 +1,11 @@
 package model.statements;
 
+import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.adt.MyIStack;
 import model.adt.MyStack;
 import model.state.PrgState;
+import model.types.IType;
 
 public class ForkStatement implements IStatement{
     private IStatement statement;
@@ -25,6 +28,12 @@ public class ForkStatement implements IStatement{
     @Override
     public IStatement deepCopy(){
         return new ForkStatement(this.statement.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        statement.typeCheck(typeEnv.deepCopy());
+        return typeEnv;
     }
 
     @Override

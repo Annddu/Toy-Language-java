@@ -4,6 +4,7 @@ import exceptions.ADTException;
 import exceptions.ExpressionException;
 import exceptions.KeyNotFoundException;
 import exceptions.StatementException;
+import model.adt.MyIDictionary;
 import model.expresions.IExpression;
 import model.state.PrgState;
 import model.types.IType;
@@ -46,6 +47,29 @@ public class HeapAllocationStatement implements IStatement{
     @Override
     public IStatement deepCopy(){
         return new HeapAllocationStatement(variable, expression.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, IType> typeCheck(MyIDictionary<String, IType> typeEnv) throws StatementException {
+        IType typeVar;
+        IType typeExp;
+        try{
+            typeVar = typeEnv.getValue(variable);
+        }
+        catch (KeyNotFoundException e){
+            throw new StatementException("The variable " + variable + " is not defined");
+        }
+
+        try{
+            typeExp = expression.typeCheck(typeEnv);
+        }
+        catch (ExpressionException e){
+            throw new StatementException(e.getMessage());
+        }
+        if(!typeVar.equals(new RefType(typeExp))){
+            throw new StatementException("The variable " + variable + " and the expression " + expression.toString() + " do not have the same type");
+        }
+        return typeEnv;
     }
 
     @Override
